@@ -18,7 +18,12 @@
             $numero="10"; // está entre comillas cuando es un entero
            // apellido=¨´Fernandez´;  no se declaró la variable con $
             //pais_de_origen="Uruguay"; no se declaró la variable con $
-            $salario=$2000; el signo "$" no se permite delante del número declarado
+            $salario=$2000; //   el signo "$" no se permite delante del número declarado
+
+            defined ("gravedad",9.8);
+            const gravedad =9.8;
+            //en ambos casos se hace lo mismo
+            //
   ?>
   
     
