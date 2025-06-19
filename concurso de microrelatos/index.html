@@ -1,15 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+      body{
+        background-color: rgb(86, 86, 86);
+       
+      }
+
+      textarea {
+      background-color: rgb(139, 136, 136); 
+      color: #0f172a; 
+      }
+      
+    #boxPrincipal {
+      background-color:  rgb(86, 86, 86);
+      border-radius: 10px;
+      text-align: center;
+    }
+      form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 5px;
+    }
+      button {
+      margin-top: 10px; 
+    }
+   
+    </style>
 </head>
 <body>
+  <div id="boxPrincipal">
     <h1>Ingrese el texto</h1>
      <form action="backend.php" method="post">
-   <textarea name="texto" id="texto"></textarea>
-   <button type="submit">enviar </button>
+   <textarea name="texto" id="texto" maxlength="700" rows="10" cols="50"></textarea>
+  <button type="submit" class="btn btn-secondary">enviar</button>
      </form>
+     </div>
 </body>
 </html>
