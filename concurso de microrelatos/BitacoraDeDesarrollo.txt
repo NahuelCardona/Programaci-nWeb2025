@@ -1,0 +1,39 @@
+1.   En una o dos frases, ¿Cuál es la misión principal de este script?
+La misión principal de este script es que la web detecte si el texto tiene
+mas de 100 palabras o mas de 700 caracteres, si es así, debe
+ avisar que se han superado los limites 
+
+2.   ¿Qué función de PHP usaste para contar los caracteres? ¿Por qué esta función es la
+ adecuada para cumplir con la regla de los 700 caracteres?
+No use función para contar los caracteres, los limite desde HTML utilizando  maxlength
+
+3.   Para contar las palabras no hay una función directa. Describe el proceso de dos
+ pasos que utilizaste. ¿Qué hace explode() y qué hace count() en tu código? 
+
+Para contar las palabras primero convertí los caracteres en un arreglo, utilizando explode(). 
+Guardé los elementos en "arregloPalabras"
+y por ultimo conté la cantidad de elementos utilizando count()
+
+4.   ¿Por qué es importante usar el espacio (' ') como separador en explode()
+ para este problema en particular?
+Es importante utilizar (' ') como separador ya que cada palabra esta separada por un espacio 
+
+
+
+6.   Describe cómo estructuraste tu bloque if / else if / else.
+ ¿Qué condición verificas primero y por qué? ¿Cómo te aseguras de que ambas 
+ reglas se cumplan a la vez?
+
+La condición que he utilizado es que cuando la cantidad de palabras supere 
+las 100, el programa debe marcar un error y debe indicarle a que se debe
+
+7.   ¿Por qué es importante dar un mensaje de error específico 
+(ej. "Rechazado por exceso de palabras") en lugar de un simple "Rechazado"?
+
+Es importante ya que el escritor debe saber a que por que ocurrio un error 
+para poder arreglar ese error en especifico 
+
+8. ¿Cuál fue la parte más desafiante de esta actividad? ¿Hubo algo que 
+te sorprendió o que no funcionó como esperabas al principio?
+La parte mas desafiante fue pensar en como marcar un error 
+al exeder la cantidad de caracteres, y la solucione directamente desde HTML
